@@ -13,8 +13,10 @@ type Service interface {
 	DescribeUser(context.Context, *DescribeUserRequest) (*User, error)
 
 	// 用户修改
+	// ModifyUser(context.Context, *ModifyUserRequest) (*User, error)
 
 	// 用户删除
+	// DeleteUser(context.Context, *DeleteUserRequest) error
 
 }
 
@@ -44,6 +46,14 @@ type UserSet struct {
 }
 
 type DescribeUserRequest struct {
+	UserId int64
+}
+
+type ModifyUserRequest struct {
+	UserId int64
+}
+
+type DeleteUserRequest struct {
 	UserId int64
 }
 

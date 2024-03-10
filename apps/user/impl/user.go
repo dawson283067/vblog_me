@@ -17,3 +17,11 @@ func (i *UserServiceImpl) QueryUser(ctx context.Context, in *user.QueryUserReqeu
 func (i *UserServiceImpl) DescribeUser(ctx context.Context, in *user.DescribeUserRequest) (*user.User, error) {
 	return nil, nil
 }
+
+// func (i *UserServiceImpl) ModifyUser(ctx context.Context, in *user.ModifyUserRequest) (*user.User, error) {
+// 	return nil, nil
+// }
+
+// func (i *UserServiceImpl) DeleteUser(ctx context.Context, in *user.DeleteUserRequest) error {
+// 	return nil
+// }
